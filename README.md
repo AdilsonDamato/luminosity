@@ -2,7 +2,7 @@
 
 ## About
 
-Manipulating hexadecimal colors with JavaScript
+[Mayk Brito Code/Drops by Rocketseat](https://www.youtube.com/watch?v=evBGq29wr08) - Manipulating hexadecimal colors with JavaScript.
 
 ## Preview
 
