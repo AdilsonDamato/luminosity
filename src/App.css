@@ -1,38 +1,66 @@
-.App {
-  text-align: center;
+:root {
+  --text-color: #FFFFFF;
+  --background-color: #121212;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  background: var(--background-color);
+  -webkit-font-smoothing: antialiased;
+  color: var(--text-color);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body, input, button {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+textarea:focus, input:focus{
+  outline: none;
+}
+
+.box {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height: 100vh;
+  flex-wrap: wrap;
 }
 
-.App-link {
-  color: #61dafb;
+.box h1 {
+  padding: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.boxColor {
+  display: flex;
+  width: 200px;
+  height: 200px;
+  background-color: #6633cc;
+  border-radius: 10px;
+  border: 2px #FFF solid;
+}
+
+.boxInputs {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0;
+}
+
+.boxInputs label {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.boxInputs input[type=text] {
+  width: 100%;
+  padding: 10px;
+  border: 2px #CCC solid;
+  border-radius: 5px;
 }
